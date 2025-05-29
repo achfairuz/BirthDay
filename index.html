@@ -40,12 +40,12 @@
 
         <div class="four">
             <h1 class="ucapan">HAPPY BIRTHDAY <span>to you</span></h1>
-            <h1 class="name"><span>Pingkan</span> Karenina Alingga Hacka</h1>
-            <p class="date">--- 22-March-2024 ---</p>
+            <h1 class="name"><span>{Nama depan (bold)}</span>{ nama belakang}</h1>
+            <p class="date">--- {00-january-2025} ---</p>
         </div>
 
         <div class="five">
-            <h1 class="title-five">Hi, Pingkan !!!</h1>
+            <h1 class="title-five">Hi, {nama panggilan} !!!</h1>
             <div class="text-box">
                 <p class="hbd-chatbox">
                     Happy birthday to youu!!
@@ -86,7 +86,7 @@
         </div>
 
         <div class="seven">
-            <img src="img/IMG_6750.JPG" alt="profile" class="profile-picture" id="imagePath" />
+            <img src="{image}" alt="profile" class="profile-picture" id="imagePath" />
             <div class="wish">
                 <h3 class="wish-hbd">Happy Birthday!</h3>
                 <h5 id="wishText">May God always be with you! ;)</h5>
@@ -173,14 +173,33 @@
             </div>
 
         </div>
-        <h1 class="thanks">Thank You</h1>
 
+        <div class="eleven" style="display: none;">
+            <h1 class="title-eleven">Thank you for watching!</h1>
+            <p class="text-eleven">I hope you like it, {Nama panggilan} :D</p>
+            <p class="text-eleven">This is my first time making a birthday surprise for someone.</p>
+            <p class="text-eleven">I hope you have a great day and a wonderful year ahead!</p>
+            <p class="text-eleven">See you soon!</p>
+            <p class="text-eleven">- Your friend,</p>
+            <p class="text-eleven">{Nama pengirim}</p>
+            <p></p>
+        </div>
 
 
 
     </div>
 
 </body>
+<script>
+    const btnNo = document.getElementById('notagain');
+    const divEleven = document.querySelector('.eleven');
+
+    btnNo.addEventListener('click', () => {
+        document.querySelector('.ten').style.display = 'none';
+        divEleven.style.display = 'block';
+    });
+</script>
+
 <!-- Greensock -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <!-- Sweetalert -->
