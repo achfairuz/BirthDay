@@ -21,5 +21,5 @@ Website ini menampilkan **pop-up SweetAlert** ketika halaman dimuat, menanyakan 
 
 1. Unduh atau kloning repositori ini:
    ```bash
-   git clone https://github.com/kamu/contoh-music-animation-web.git
+   git clone https://github.com/achfairuz/BirthDay.git
    ```
